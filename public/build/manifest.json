@@ -1,0 +1,142 @@
+{
+  "_helper-82031ce3.js": {
+    "file": "assets/helper-82031ce3.js"
+  },
+  "_index-37ddc8a9.js": {
+    "file": "assets/index-37ddc8a9.js"
+  },
+  "_index-eb0b825a.js": {
+    "file": "assets/index-eb0b825a.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-2ef6fdde.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-f4617423.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-12dea17b.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-7ba24c41.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-67a880b4.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-e2c5cf54.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
+    "file": "assets/fa-v4compatibility-8d9500e8.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-7c377405.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-430d8f56.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/fa-brands-400-f4617423.woff2",
+      "assets/fa-brands-400-2ef6fdde.ttf",
+      "assets/fa-regular-400-7ba24c41.woff2",
+      "assets/fa-regular-400-12dea17b.ttf",
+      "assets/fa-solid-900-e2c5cf54.woff2",
+      "assets/fa-solid-900-67a880b4.ttf",
+      "assets/fa-v4compatibility-7c377405.woff2",
+      "assets/fa-v4compatibility-8d9500e8.ttf"
+    ],
+    "css": [
+      "assets/app-430d8f56.css"
+    ],
+    "dynamicImports": [
+      "resources/js/components/layout/DashboardMenu.vue",
+      "resources/js/components/includes/Loading.vue",
+      "resources/js/components/includes/GoBackBtn.vue",
+      "resources/js/components/includes/BodyHeader.vue",
+      "resources/js/components/dashboard/Tasks.vue",
+      "resources/js/components/dashboard/TaskEditor.vue",
+      "resources/js/components/dashboard/TaskDetails.vue"
+    ],
+    "file": "assets/app-81943c28.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/components/dashboard/TaskDetails.vue": {
+    "file": "assets/TaskDetails-fd5e9a70.js",
+    "imports": [
+      "_helper-82031ce3.js",
+      "resources/js/app.js",
+      "_index-eb0b825a.js",
+      "_index-37ddc8a9.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/dashboard/TaskDetails.vue"
+  },
+  "resources/js/components/dashboard/TaskEditor.vue": {
+    "file": "assets/TaskEditor-bc99f0d5.js",
+    "imports": [
+      "_helper-82031ce3.js",
+      "resources/js/app.js",
+      "_index-eb0b825a.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/dashboard/TaskEditor.vue"
+  },
+  "resources/js/components/dashboard/Tasks.vue": {
+    "file": "assets/Tasks-3223e34f.js",
+    "imports": [
+      "resources/js/app.js",
+      "_index-eb0b825a.js",
+      "_helper-82031ce3.js",
+      "_index-37ddc8a9.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/dashboard/Tasks.vue"
+  },
+  "resources/js/components/includes/BodyHeader.vue": {
+    "file": "assets/BodyHeader-54079eff.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/includes/BodyHeader.vue"
+  },
+  "resources/js/components/includes/GoBackBtn.vue": {
+    "file": "assets/GoBackBtn-aef0c6a6.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/includes/GoBackBtn.vue"
+  },
+  "resources/js/components/includes/Loading.vue": {
+    "file": "assets/Loading-8367dfc8.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/includes/Loading.vue"
+  },
+  "resources/js/components/layout/DashboardMenu.vue": {
+    "file": "assets/DashboardMenu-76e415dc.js",
+    "imports": [
+      "resources/js/app.js",
+      "_helper-82031ce3.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/layout/DashboardMenu.vue"
+  }
+}

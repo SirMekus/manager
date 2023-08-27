@@ -1,0 +1,30 @@
+:root{
+	--color-theme:#e920a681;
+}
+
+body{background-color:#252e3a;} 
+
+.text-home{color:var(--color-theme) !important;}
+
+.home-color{background-color:var(--color-theme) !important;}
+
+.btn-home, .bg-home{background-color:#800a0a91; color:rgba(255, 255, 255, 0.979)} 
+.btn-home:hover{background-color:#f3047b5e; color:white} 
+
+.bg-indicator{background-color:#f70b8270} 
+
+/*Actual menu that includes the options such as loggin in, etc found in the top page background-color:#efbb1a;*/
+.background-gradient-design{background-image:linear-gradient(75deg, #f3047da1, #f3a104d9 33%,  #f30474 66%, #f30474 40%, #f30474);
+                    background-image:-moz-linear-gradient(75deg, #f3047da1, #f3a104d9 33%,  #f30474 66%, #f30474 40%, #f30474);    
+					background-image:-webkit-linear-gradient(75deg, #f3047da1, #f3a104d9 33%,  #f30474 66%, #f30474 40%, #f30474);} 
+	 
+
+a.disabled-link{pointer-events:none;cursor:default;}
+
+
+.logo{
+  background-position:40% 18%; 
+  background-image: url('/storage/for_site/istockphoto.jpg'); 
+  background-repeat:no-repeat; 
+  background-size:150%;
+}
