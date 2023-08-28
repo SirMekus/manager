@@ -28,8 +28,8 @@
                             </div>
                             <div class="card-footer">
                                 <div class="btn-group d-flex justify-content-center">
-                                    <button type="button" class="pre-run btn btn-dark btn-sm" data-caption="Are you sure you want to delete this task?"
-                                    data-classname="run-get-request" data-bc="delete">Delete</button>
+                                    <a href="#" class="pre-run btn btn-dark btn-sm" data-caption="Are you sure you want to delete this task?"
+                                    data-classname="run-get-request" data-bc="delete">Delete</a>
 
                                     <router-link class="text-decoration-none bg-primary btn-sm btn text-white ms-3" :to="{name:'task_editor', query: { id: result.tasks[0].id }}">
                                         Edit

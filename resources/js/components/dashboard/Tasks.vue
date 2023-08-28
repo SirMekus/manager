@@ -14,14 +14,14 @@
                                 <div class="col-9 my-1">
                                     <label>Search By Status</label>
                                     <select class="form-select" v-model="state.status">
-                                        <option selected value="null">Search By Status</option>
+                                        <option selected value="">Search By Status</option>
                                         <option value="0">Completed</option>
                                         <option value="1">In Progress</option>
                                         <option value="2">Not Started</option>
                                     </select>
                                 </div>
 
-                                <div class="col-3 my-1 mt-4">
+                                <div class="col-3 my-1 mt-4 pt-2">
                                     <button type="submit" class="btn btn-home btn-sm" @click.prevent="refetch()">Search</button>
                                 </div>
                             </form>
@@ -63,10 +63,10 @@ export default {
     setup() {
         const state = reactive({
             loading: false,
-            status: null
+            status: ''
         })
 
-        const { result, loading, refetch  } = useQuery(gql`
+        const { result, loading, refetch } = useQuery(gql`
       query getTasks ($status: Int)  {
         tasks(status:$status) {
           id
@@ -76,15 +76,17 @@ export default {
           status
         }
       }
-    `, ()=>{
-        status:state.status
-    },
-    {skip: state.status < 0}
+    `, ()=>({
+        status: state.status >= 0 ? Number(state.status) : ''
+    }),
     )
-        const user = useAuthStore().data
+    
+    const user = useAuthStore().data
         
 
-        state.loading = loading
+    state.loading = loading
+
+    
 
         return {
             state,

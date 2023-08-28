@@ -1,43 +1,34 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-10 col-xl-10 col-md-10 col-md-10">
-                <div class="bg-dark offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart"
-                    aria-labelledby="offcanvasTopLabel">
-
+            <div class="col-12">
+                <div class="bg-dark offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
                         <a class="nav-link fw-bold text-light" href="/">
                             <span id="offcanvasTopLabel" class="text-white fw-bolder fs-2">{{ appName }}</span>
                         </a>
-
                         <button type="button" id='close-menu' class="btn-close text-reset bg-light"
                             data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
                     <div class="offcanvas-body">
                         <nav class="nav flex-column">
-
                             <div style="border-bottom: medium solid white; height:8px;"></div>
-
                             <router-link class="nav-link font-weight-bold text-light anchor-tags"
                                 :to="{ name: 'tasks' }">
-                                <i class="fas fa-home"></i>Task Manager
+                                <i class="fas fa-tasks-alt"></i>Task Manager
                             </router-link>
 
                             <router-link class="nav-link font-weight-bold text-light anchor-tags"
                                 :to="{ name: 'task_editor' }">
-                                <i class="fas fa-home"></i>Add/Create Task
+                                <i class="fas fa-edit"></i>Add/Create Task
                             </router-link>
-
                         </nav>
                     </div>
-
                 </div>
                 <!-- - - - - - - -- - - - - - - - - - - - - - - Dashboard Menu ends here - - - - - - - -  - - -- - - - - - - - - - - - - - - -->
 
-
-                <nav class="nav navbar navbar-expand nav-fill justify-content-center home-color sticky-top"
-                    role="navigation">
+                <nav class="nav navbar navbar-expand nav-fill justify-content-center home-color sticky-top" role="navigation">
                     <div class="bg-light position-absolute start-0" style="height:26px; width:35px; z-index:1000;">
                         <a id="dashboard-menu-toggle" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart"
                             aria-controls="offcanvasStart">
@@ -62,7 +53,6 @@
                             </a>
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="pb-5">

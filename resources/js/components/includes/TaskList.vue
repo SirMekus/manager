@@ -8,16 +8,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="item in tasks.tasks" :key="item.id" :class="{'bg-success text-white':item?.status == 'COMPLETED'}, {'bg-danger text-white':differenceInDays(new Date(item?.due_date), new Date()) <= 1 && item?.status != 'COMPLETED'}" >
+                <tr v-for="item in tasks.tasks" :key="item.id" :class="taskIndicator(item)" >
                   <td>{{ capitalLetters(item?.title) }}</td>
                   <td>{{ format(new Date(item?.due_date), "do,MMMM yyyy") }}</td>
                   <td>
                     <span class="badge bg-dark">
-                    <router-link class="text-decoration-none text-white" :to="{name:'task_details', query: { id: item?.id }}">
-                        View More
-                    </router-link>
+                        <router-link class="text-decoration-none text-white" :to="{name:'task_details', query: { id: item?.id }}">
+                            View More
+                        </router-link>
                     </span>
-                </td>
+                   </td>
                 </tr>
               </tbody>
         </table>
@@ -32,10 +32,22 @@
         props: ['tasks'],
         setup(props) {
 
+            function taskIndicator(task) {
+                if(task?.status == 'COMPLETED'){
+                    return { 'bg-success text-white': true }
+                }
+                else{
+                    if(differenceInDays(new Date(task?.due_date), new Date()) <= 1 && task?.status !== 'COMPLETED'){
+                        return { 'bg-danger text-white': true }
+                    }
+                }
+        }
+
 		return {
             capitalLetters,
             format,
-            differenceInDays
+            differenceInDays,
+            taskIndicator
 		};
 	   }
     }

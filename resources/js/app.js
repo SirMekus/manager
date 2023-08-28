@@ -21,7 +21,6 @@ import  vuelarPlugin  from "@sirmekus/vuelar"
 import Login from './components/auth/Login.vue'
 import SignUp from './components/auth/SignUp.vue'
 
-//import * as apolloProvider from './apolloProvider'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { ApolloClient, InMemoryCache } from '@apollo/client/core'
 
@@ -29,7 +28,7 @@ const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
   cache,
-  uri: import.meta.env.VITE_GRAPHQL_ENDPOINT,
+  uri: `${location.origin + (location.port ? ':'+location.port : '')}/graphql`,
 })
 
 let app = createApp({
@@ -38,14 +37,9 @@ let app = createApp({
   },
 })
 
-
-//let app = createApp({});
-
 app.use(createPinia());
 
 app.use(vuelarPlugin)
-
-//app.use(apolloProvider.provider);
 
 app.config.productionTip = false;
 
@@ -58,7 +52,6 @@ for(component in asyncComponent){
 app.component('Login', Login).component('SignUp', SignUp);
 
 router.beforeResolve(async (to, from) => {
-    //This is specific to founder(s) of an organisation. Only founder(s) should have access/permission
     if (to.meta.requiresAuthentication) {
         const user = useAuthStore();
         if (!user.data || !sessionStorage.auth_checked) {
@@ -80,11 +73,6 @@ router.beforeResolve(async (to, from) => {
 });
 
 router.beforeEach((to, from) => {
-    if(from.name == undefined && (location.pathname != to.fullPath) && document.querySelector("body").children[0].nextElementSibling){
-        // location.href = to.fullPath
-        // return false
-    }
-
     if(document.querySelector("#close-menu") && document.querySelector("#close-menu").parentElement.parentElement.classList.contains('show')){
         document.querySelector("#close-menu").click()
     }
@@ -95,29 +83,10 @@ router.beforeEach((to, from) => {
 router.afterEach((to, from) => {
     document.body.removeAttribute("style");
     removeSpinner();
-
-    if(to.name == undefined && !document.querySelector("body").children[0].nextElementSibling){
-        //location.reload()
-    }
 });
 
 app.use(router);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 app.mount("#app");
 
-
-let app2 = createApp({});
-app2.component("VueFooter", asyncComponent.Footer);
-
-if(document.querySelector("#spaFooter")){
-    app2.use(router);
-    app2.mount("#spaFooter");
-}
-
-
-export { app, app2 };
+export { app };

@@ -1,13 +1,10 @@
-import { on, registerEventListeners, lazyLoadImages } from "mmuo"
+import { on, registerEventListeners } from "mmuo"
 import * as bootstrap from '~bootstrap';
 import axios from 'axios';
 
 window.addEventListener("DOMContentLoaded", function() {
     registerEventListeners()
-
-    lazyLoadImages()
 }, false);
-
 
 try {
 window.bootstrap =  bootstrap;

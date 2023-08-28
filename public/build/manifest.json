@@ -5,8 +5,8 @@
   "_index-37ddc8a9.js": {
     "file": "assets/index-37ddc8a9.js"
   },
-  "_index-eb0b825a.js": {
-    "file": "assets/index-eb0b825a.js",
+  "_index-9d0725f1.js": {
+    "file": "assets/index-9d0725f1.js",
     "imports": [
       "resources/js/app.js"
     ]
@@ -70,36 +70,36 @@
       "resources/js/components/dashboard/TaskEditor.vue",
       "resources/js/components/dashboard/TaskDetails.vue"
     ],
-    "file": "assets/app-81943c28.js",
+    "file": "assets/app-c1148ba7.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/dashboard/TaskDetails.vue": {
-    "file": "assets/TaskDetails-fd5e9a70.js",
+    "file": "assets/TaskDetails-9d9ec433.js",
     "imports": [
       "_helper-82031ce3.js",
       "resources/js/app.js",
-      "_index-eb0b825a.js",
+      "_index-9d0725f1.js",
       "_index-37ddc8a9.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/dashboard/TaskDetails.vue"
   },
   "resources/js/components/dashboard/TaskEditor.vue": {
-    "file": "assets/TaskEditor-bc99f0d5.js",
+    "file": "assets/TaskEditor-b7693fd0.js",
     "imports": [
       "_helper-82031ce3.js",
       "resources/js/app.js",
-      "_index-eb0b825a.js"
+      "_index-9d0725f1.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/components/dashboard/TaskEditor.vue"
   },
   "resources/js/components/dashboard/Tasks.vue": {
-    "file": "assets/Tasks-3223e34f.js",
+    "file": "assets/Tasks-b98bbae2.js",
     "imports": [
       "resources/js/app.js",
-      "_index-eb0b825a.js",
+      "_index-9d0725f1.js",
       "_helper-82031ce3.js",
       "_index-37ddc8a9.js"
     ],
@@ -107,7 +107,7 @@
     "src": "resources/js/components/dashboard/Tasks.vue"
   },
   "resources/js/components/includes/BodyHeader.vue": {
-    "file": "assets/BodyHeader-54079eff.js",
+    "file": "assets/BodyHeader-cde7f4b5.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -115,7 +115,7 @@
     "src": "resources/js/components/includes/BodyHeader.vue"
   },
   "resources/js/components/includes/GoBackBtn.vue": {
-    "file": "assets/GoBackBtn-aef0c6a6.js",
+    "file": "assets/GoBackBtn-417cc012.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -123,7 +123,7 @@
     "src": "resources/js/components/includes/GoBackBtn.vue"
   },
   "resources/js/components/includes/Loading.vue": {
-    "file": "assets/Loading-8367dfc8.js",
+    "file": "assets/Loading-8c6391c3.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -131,7 +131,7 @@
     "src": "resources/js/components/includes/Loading.vue"
   },
   "resources/js/components/layout/DashboardMenu.vue": {
-    "file": "assets/DashboardMenu-76e415dc.js",
+    "file": "assets/DashboardMenu-b66bfd2e.js",
     "imports": [
       "resources/js/app.js",
       "_helper-82031ce3.js"
